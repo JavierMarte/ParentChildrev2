@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -200,10 +201,10 @@ public class ParentActivity extends Activity {
                 ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
 
         // Example: If you have a TextView inside `popup_layout.xml`
-        TextView tv = (TextView) popupView.findViewById(R.id.textView1);
-
-        tv.setText("heyyyyyyyyyyy");
-
+//        TextView tv = (TextView) popupView.findViewById(R.id.textView1);
+//
+//        tv.setText("heyyyyyyyyyyy");
+        ImageView hello = (ImageView) popupView.findViewById(R.id.imageView);
         // Initialize more widgets from `popup_layout.xml`
 
         // If the PopupWindow should be focusable
