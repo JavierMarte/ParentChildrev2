@@ -52,6 +52,7 @@ public class ParentActivity extends Activity {
             public void onClick(View v) {
                 // Perform action on click
                 showPopup(v);
+
             }
         });
     }
@@ -204,7 +205,6 @@ public class ParentActivity extends Activity {
         tv.setText("heyyyyyyyyyyy");
 
         // Initialize more widgets from `popup_layout.xml`
-
 
         // If the PopupWindow should be focusable
         popupWindow.setFocusable(true);
