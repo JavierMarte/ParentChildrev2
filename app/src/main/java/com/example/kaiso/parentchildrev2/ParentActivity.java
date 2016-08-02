@@ -221,6 +221,7 @@ public class ParentActivity extends Activity {
         // Using location, the PopupWindow will be displayed right under anchorView
 //        popupWindow.showAtLocation(anchorView, Gravity.NO_GRAVITY,
 //                location[0], location[1] + anchorView.getHeight());
+        popupWindow.showAtLocation(anchorView, Gravity.NO_GRAVITY,0,0);
 
     }
 
