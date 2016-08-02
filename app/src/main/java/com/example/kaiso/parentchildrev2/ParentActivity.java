@@ -208,7 +208,7 @@ public class ParentActivity extends Activity {
         // Initialize more widgets from `popup_layout.xml`
 
         // If the PopupWindow should be focusable
-        popupWindow.setFocusable(true);
+        //popupWindow.setFocusable(true);
 
         // If you need the PopupWindow to dismiss when when touched outside
         popupWindow.setBackgroundDrawable(new ColorDrawable());
@@ -219,8 +219,8 @@ public class ParentActivity extends Activity {
         anchorView.getLocationOnScreen(location);
 
         // Using location, the PopupWindow will be displayed right under anchorView
-        popupWindow.showAtLocation(anchorView, Gravity.NO_GRAVITY,
-                location[0], location[1] + anchorView.getHeight());
+//        popupWindow.showAtLocation(anchorView, Gravity.NO_GRAVITY,
+//                location[0], location[1] + anchorView.getHeight());
 
     }
 
