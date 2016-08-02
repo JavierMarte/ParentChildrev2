@@ -52,7 +52,7 @@ public class ParentActivity extends Activity {
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Perform action on click
-                showPopup(v);
+               // showPopup(v);
 
             }
         });
@@ -193,37 +193,37 @@ public class ParentActivity extends Activity {
 
     }
 
-    public void showPopup(View anchorView) {
-
-        View popupView = getLayoutInflater().inflate(R.layout.fragment_one, null);
-
-        PopupWindow popupWindow = new PopupWindow(popupView,
-                ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-
-        // Example: If you have a TextView inside `popup_layout.xml`
-//        TextView tv = (TextView) popupView.findViewById(R.id.textView1);
+//    public void showPopup(View anchorView) {
 //
-//        tv.setText("heyyyyyyyyyyy");
-        ImageView hello = (ImageView) popupView.findViewById(R.id.imageView);
-        // Initialize more widgets from `popup_layout.xml`
-
-        // If the PopupWindow should be focusable
-        //popupWindow.setFocusable(true);
-
-        // If you need the PopupWindow to dismiss when when touched outside
-        popupWindow.setBackgroundDrawable(new ColorDrawable());
-
-        int location[] = new int[2];
-
-        // Get the View's(the one that was clicked in the Fragment) location
-        anchorView.getLocationOnScreen(location);
-
-        // Using location, the PopupWindow will be displayed right under anchorView
-//        popupWindow.showAtLocation(anchorView, Gravity.NO_GRAVITY,
-//                location[0], location[1] + anchorView.getHeight());
-        popupWindow.showAtLocation(anchorView, Gravity.NO_GRAVITY,0,0);
-
-    }
+//        View popupView = getLayoutInflater().inflate(R.layout.fragment_one, null);
+//
+//        PopupWindow popupWindow = new PopupWindow(popupView,
+//                ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+//
+//        // Example: If you have a TextView inside `popup_layout.xml`
+////        TextView tv = (TextView) popupView.findViewById(R.id.textView1);
+////
+////        tv.setText("heyyyyyyyyyyy");
+//        ImageView hello = (ImageView) popupView.findViewById(R.id.imageView);
+//        // Initialize more widgets from `popup_layout.xml`
+//
+//        // If the PopupWindow should be focusable
+//        //popupWindow.setFocusable(true);
+//
+//        // If you need the PopupWindow to dismiss when when touched outside
+//        popupWindow.setBackgroundDrawable(new ColorDrawable());
+//
+//        int location[] = new int[2];
+//
+//        // Get the View's(the one that was clicked in the Fragment) location
+//        anchorView.getLocationOnScreen(location);
+//
+//        // Using location, the PopupWindow will be displayed right under anchorView
+////        popupWindow.showAtLocation(anchorView, Gravity.NO_GRAVITY,
+////                location[0], location[1] + anchorView.getHeight());
+//        popupWindow.showAtLocation(anchorView, Gravity.NO_GRAVITY,0,0);
+//
+//    }
 
     public void updateDisplay(String x) {
 
