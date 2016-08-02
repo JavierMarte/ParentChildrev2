@@ -38,27 +38,6 @@ public class ParentActivity extends Activity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_parent2);
-//        final EditText latitude = (EditText) findViewById(R.id.editText2);
-//        final EditText longitude = (EditText) findViewById(R.id.editText3);
-//        EditText radius = (EditText) findViewById(R.id.editText4);
-//        String lon = "40";
-//        String lat = "40";
-//        latitude.setText(lat);
-//        longitude.setText(lon);
-//        double locationx = Double.parseDouble(latitude.toString());
-//        //Double.parseDouble(text);
-//        double locationy = Double.parseDouble(longitude.toString());
-//        //latitude.getText()
-//        double childLocationX = Double.parseDouble(lat);
-//        double childLocationY = Double.parseDouble(lon);
-//
-//
-//        distance = Math.sqrt(((locationx - childLocationX) * (locationx - childLocationX)) + ((locationy - childLocationY) * (locationy - childLocationY)));
-//
-////int newRadius = Integer.parseInt(radius.g);
-//        newRadius = Integer.parseInt(radius.getText().toString());
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
 
