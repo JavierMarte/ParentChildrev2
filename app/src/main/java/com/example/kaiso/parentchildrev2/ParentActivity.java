@@ -2,6 +2,7 @@ package com.example.kaiso.parentchildrev2;
 
 import android.app.Activity;
 import android.app.Fragment;
+import android.app.FragmentTransaction;
 import android.content.Context;
 import android.graphics.drawable.ColorDrawable;
 import android.location.Location;
@@ -301,8 +302,12 @@ public class ParentActivity extends Activity {
 
             Toast toast = Toast.makeText(context, text, duration);
             toast.show();
+            FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+            fragmentTransaction.add(R.id.fragment_container, new FragmentOne()).addToBackStack("FRAG") .commit();
             //toast in zone
         }
+
+
 
     }
 
