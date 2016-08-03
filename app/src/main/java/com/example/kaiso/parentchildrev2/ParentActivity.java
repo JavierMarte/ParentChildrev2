@@ -192,7 +192,19 @@ public class ParentActivity extends Activity {
 
 
     }
+    @Override
+    public void onBackPressed() {
 
+        int count = getFragmentManager().getBackStackEntryCount();
+
+        if (count == 0) {
+            super.onBackPressed();
+            //additional code
+        } else {
+            getFragmentManager().popBackStack();
+        }
+
+    }
 //    public void showPopup(View anchorView) {
 //
 //        View popupView = getLayoutInflater().inflate(R.layout.fragment_one, null);
