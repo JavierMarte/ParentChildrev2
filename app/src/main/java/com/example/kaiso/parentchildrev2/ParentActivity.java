@@ -68,6 +68,8 @@ public class ParentActivity extends Activity {
 
             hello.setText(String.valueOf(gpsTracker.getLatitude()));
             hello2.setText(String.valueOf(gpsTracker.getLongitude()));
+
+
         }
 
     }
