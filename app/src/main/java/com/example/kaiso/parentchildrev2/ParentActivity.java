@@ -292,6 +292,8 @@ public class ParentActivity extends Activity {
 
             Toast toast = Toast.makeText(context, text, duration);
             toast.show();
+            FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+            fragmentTransaction.add(R.id.fragment_container, new FragmentTwo()).addToBackStack("FRAG") .commit();
             //showPopup(FragmentOne);
 
             //toast out of zone
