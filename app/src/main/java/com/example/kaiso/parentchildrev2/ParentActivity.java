@@ -34,6 +34,7 @@ public class ParentActivity extends Activity {
     JSONObject jsonObject = new JSONObject();
     double distance;
     int newRadius;
+    Tracker gpsTracker;
     String x;
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -57,6 +58,18 @@ public class ParentActivity extends Activity {
 
             }
         });
+
+        TextView hello = (TextView) findViewById(R.id.textView5);
+        TextView hello2 = (TextView) findViewById(R.id.textView6);
+        gpsTracker = new Tracker(ParentActivity.this);
+
+        // check if GPS enabled
+        if(gpsTracker.canGetLocation()) {
+
+            hello.setText(String.valueOf(gpsTracker.getLatitude()));
+            hello2.setText(String.valueOf(gpsTracker.getLongitude()));
+        }
+
     }
 
 
