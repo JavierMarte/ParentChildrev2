@@ -15,9 +15,19 @@ public class FragmentOne extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
 
         //Inflate the layout for this fragment
-
-        return inflater.inflate(
+        View view = inflater.inflate(
                 R.layout.fragment_one, container, false);
+
+
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getActivity().getFragmentManager().beginTransaction().remove(FragmentOne.this).commit();
+            }
+        });
+
+
+        return view;
     }
 
 
