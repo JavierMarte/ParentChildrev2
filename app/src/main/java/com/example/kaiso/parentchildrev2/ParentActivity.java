@@ -297,6 +297,18 @@ public class ParentActivity extends Activity {
 
         distance = Math.sqrt(((locationx - childLocationX) * (locationx - childLocationX)) + ((locationy - childLocationY) * (locationy - childLocationY)));
 
+
+        Location locationA = new Location("point A");
+
+        locationA.setLatitude(locationx);
+        locationA.setLongitude(locationy);
+
+        Location locationB = new Location("point B");
+
+        locationB.setLatitude(childLocationX);
+        locationB.setLongitude(childLocationY);
+
+        distance = locationA.distanceTo(locationB);
 //int newRadius = Integer.parseInt(radius.g);
         newRadius = Integer.parseInt(radius.getText().toString());
 
